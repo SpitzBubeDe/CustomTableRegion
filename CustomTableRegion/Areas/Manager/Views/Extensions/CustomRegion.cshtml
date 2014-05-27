@@ -1,0 +1,19 @@
+﻿@model CustomTableRegion.Extend.CustomRegion
+
+@Html.HiddenFor(m => m.EntityId)
+@Html.HiddenFor(m => m.Entity.Id)
+@Html.HiddenFor(m => m.Entity.PageId)
+<ul class="form">
+	<li>
+		@Html.LabelFor(m => m.Entity.Field1, "Field1")
+		<div class="input">
+			@Html.TextBoxFor(m => m.Entity.Field1)
+		</div>
+	</li>
+	<li>
+		@Html.LabelFor(m => m.Entity.Field2, "Field2")
+		<div class="input">
+			@Html.TextBoxFor(m => m.Entity.Field2)
+		</div>
+	</li>
+</ul>
